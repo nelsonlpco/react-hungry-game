@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hungry-game/static/css/main.d5e2d44c.chunk.css",
+    "main.js": "/hungry-game/static/js/main.be6a8657.chunk.js",
+    "main.js.map": "/hungry-game/static/js/main.be6a8657.chunk.js.map",
+    "runtime-main.js": "/hungry-game/static/js/runtime-main.09302c33.js",
+    "runtime-main.js.map": "/hungry-game/static/js/runtime-main.09302c33.js.map",
+    "static/js/2.7e1b3c96.chunk.js": "/hungry-game/static/js/2.7e1b3c96.chunk.js",
+    "static/js/2.7e1b3c96.chunk.js.map": "/hungry-game/static/js/2.7e1b3c96.chunk.js.map",
+    "static/js/3.8c233d5a.chunk.js": "/hungry-game/static/js/3.8c233d5a.chunk.js",
+    "static/js/3.8c233d5a.chunk.js.map": "/hungry-game/static/js/3.8c233d5a.chunk.js.map",
+    "index.html": "/hungry-game/index.html",
+    "static/css/main.d5e2d44c.chunk.css.map": "/hungry-game/static/css/main.d5e2d44c.chunk.css.map",
+    "static/js/2.7e1b3c96.chunk.js.LICENSE.txt": "/hungry-game/static/js/2.7e1b3c96.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09302c33.js",
+    "static/js/2.7e1b3c96.chunk.js",
+    "static/css/main.d5e2d44c.chunk.css",
+    "static/js/main.be6a8657.chunk.js"
+  ]
+}
