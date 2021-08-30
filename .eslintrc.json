@@ -25,6 +25,8 @@
     ],
     "ignorePatterns": ["config-overrides.js", "jest.config.js"],
     "rules": {
+      "no-shadow": "off",
+      "@typescript-eslint/no-shadow": ["error"],
       "import/no-unresolved": "error",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
       "import/extensions": [
