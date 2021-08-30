@@ -1,0 +1,19 @@
+$primaryBg: #2e2e2e;
+$secondaryBg: #e9e9e1;
+$ok: #66e093;
+$cancel: #f55f57;
+$font-default: #2e2e2e;
+
+$BREAKPOINT-DESK: 'only screen and (min-width: 1280px)';
+$BREAKPOINT-TABLET-LAND: 'only screen and (min-width: 975px)';
+$BREAKPOINT-TABLET: 'only screen and (min-width: 600px)';
+$BREAKPOINT-MOBILE-LAND: 'only screen and (min-width: 480px)';
+
+@mixin margin-page {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media #{$BREAKPOINT-DESK} {
+    max-width: 1000px;
+  }
+}
