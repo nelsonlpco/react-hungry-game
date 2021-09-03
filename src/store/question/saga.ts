@@ -5,28 +5,28 @@ import questionActions, {
   QuestionAction,
   QuestionActionTypes,
 } from './actions';
-import gameActions from '../game/actions';
-import gameSeletors from '../game/selectors';
+// import gameActions from '../game/actions';
+// import gameSeletors from '../game/selectors';
 import pt from '../globalization/pt';
 
 function* setFood({ payload: food }: QuestionAction<string>): any {
-  const npcQuestionNode = yield select(gameSeletors.getQuestionNode);
+  // const npcQuestionNode = yield select(gameSeletors.getQuestionNode);
   yield put(questionActions.setFood(food));
   yield put(questionActions.setShowFoodModal(false));
-  yield put(gameActions.setAnimation(CssAnimations.slidRight));
-  yield put(
-    questionActions.setCurrentQuestion(
-      pt.whatsYourFoodIsThatFoodIsNot(food, npcQuestionNode.Question),
-    ),
-  );
+  // yield put(gameActions.setAnimation(CssAnimations.slidRight));
+  // yield put(
+  // questionActions.setCurrentQuestion(
+  // pt.whatsYourFoodIsThatFoodIsNot(food, npcQuestionNode.Question),
+  // ),
+  // );
   yield delay(300);
-  yield put(gameActions.setAnimation(CssAnimations.slidIn));
+  // yield put(gameActions.setAnimation(CssAnimations.slidIn));
 }
 
 function* setQuality({ payload: quality }: QuestionAction<string>) {
-  yield put(questionActions.setQuality(quality));
+  // yield put(questionActions.setQuality(quality));
   yield delay(300);
-  yield put(gameActions.setUserFavoriteFoodAsync());
+  // yield put(gameActions.setUserFavoriteFoodAsync());
 }
 
 export default [

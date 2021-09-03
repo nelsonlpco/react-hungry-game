@@ -6,7 +6,7 @@ import Card from 'components/card';
 import Button from 'components/button';
 import useTheme from 'hooks/use-theme';
 
-import gameSelectors from 'store/game/selectors';
+// import gameSelectors from 'store/game/selectors';
 import questionSelectors from 'store/question/selectors';
 import questionActions from 'store/question/actions';
 import QuestionForm from '../../../../components/question-form';
@@ -14,12 +14,11 @@ import QuestionForm from '../../../../components/question-form';
 function FoodQuestion(): JSX.Element {
   const dispatch = useDispatch();
   const theme = useTheme();
-  const animation = useSelector(gameSelectors.getAnimation);
+  // const animation = useSelector(gameSelectors.getAnimation);
   const question = useSelector(questionSelectors.getQuestion);
 
-  const showQuestionModal = useSelector(gameSelectors.showQuestionModal);
+  // const showQuestionModal = useSelector(gameSelectors.showQuestionModal);
   const showFoodModal = useSelector(questionSelectors.showFoodModal);
-  const showFoodCard = showQuestionModal && showFoodModal;
 
   const [food, setFood] = useState('');
 
@@ -44,11 +43,11 @@ function FoodQuestion(): JSX.Element {
     [nextHandler, food],
   );
 
-  if (!showFoodCard) return <></>;
+  if (!showFoodModal) return <></>;
 
   return (
     <Card
-      animation={animation}
+      animation=""
       bgColor={theme.colors.secondaryBg}
       body={
         <QuestionForm
